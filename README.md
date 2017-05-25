@@ -3,6 +3,7 @@
 Vim  
 Bash  
 iTerm Color Scheme: Atom  
+Vim Theme: One  
 Zsh  
 Zsh Theme: TheOne  
 Oh My Zsh  
