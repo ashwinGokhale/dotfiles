@@ -75,6 +75,7 @@ Plugin 'git@github.com:rdnetto/YCM-Generator.git'
 " Syntastic
 Plugin 'git@github.com:vim-syntastic/syntastic.git'
 
+Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -231,12 +232,14 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme one
-catch
-endtry
+"try
+    colorscheme onehalfdark
+	let g:airline_theme='onehalfdark'
+	let $VIM_TUI_ENABLE_TRUE_COLOR=1
+"catch
+"endtry
 
-set background=dark
+" set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -266,8 +269,9 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Use spaces instead of tabs
-set expandtab
+set noexpandtab
 
 " Be smart when using tabs ;)
 set smarttab

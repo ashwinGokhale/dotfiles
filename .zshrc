@@ -90,27 +90,13 @@ alias zshconfig="vim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 alias dropbox="cd ~/Dropbox"
 alias github="cd ~/Dropbox/gitHub"
-alias cs240="dropbox && cd Purdue-CS-Courses/240"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias pss="ssh gokhale0@data.cs.purdue.edu"
 alias gdb="sudo gdb"
-alias redisStart="brew services start redis"
-alias redisStop="brew services stop redis"
-alias xamppstart="sudo /Applications/XAMPP/xamppfiles/xampp start"
-alias catalina="/usr/local/Cellar/tomcat/8.5.15/bin/catalina"
-
-# Composer imports
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-
+alias phrootssh="ssh root@104.236.79.63"
+alias phlaravelssh="ssh laravel@104.236.79.63"
+alias rm=trash
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ashwin/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/ashwin/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/ashwin/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ashwin/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python3/3.6.0_1/Frameworks/Python.framework/Versions/3.6/bin/python3.6
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+export JAVA_HOME="$(/usr/libexec/java_home)"
